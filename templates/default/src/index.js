@@ -10,12 +10,14 @@ const Details = () => import(/* webpackChunkName: "details" */'./components/deta
 const Detail = () => import(/* webpackChunkName: "detail" */'./components/detail')
 const Example = () => import(/* webpackChunkName: "example" */'./components/example')
 const InfosMedia = () => import(/* webpackChunkName: "InfosMedia" */'./components/InfosMedia/InfosMedia')
+const SimilarTitles = () => import(/* webpackChunkName: "similar-titles" */'./components/similar-titles/similar-titles')
 
 logger.mode = DEBUG
 
 function launch () {
   // init Router
   Router.init('app', [
+    { re: /^similar-titles/, Component: SimilarTitles },
     { re: /^(.*)$/, Component: Details },
     { re: /^detail/, Component: Detail },
     { re: /^(.*)$/, Component: Example },
