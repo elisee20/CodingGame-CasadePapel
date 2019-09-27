@@ -15,15 +15,6 @@ class Player extends Component {
     })
   }
 
-  // Keys
-  onKeyPause () {
-    Connector.pause()
-  }
-
-  onKeyPlay () {
-    Connector.resume()
-  }
-
   render () {
     return (
       <div className="player"></div>
