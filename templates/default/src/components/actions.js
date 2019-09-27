@@ -40,10 +40,6 @@ class Actions extends Component {
   onKeyUp () { this.focus(this.current - 1) }
 
   onKeyDown () { this.focus(this.current + 1) }
-
-  onKeyEnter () {
-    console.log('clicked', this.actions[this.current])
-  }
 }
 
 export default Actions
