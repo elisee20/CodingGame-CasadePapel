@@ -1,6 +1,7 @@
 import { Component, h, Router } from 'splay'
 import MyStore from '@stores/mystore'
 import '@css/components/example.less'
+import '@css/components/InfosMedia/InfosMedia.less'
 
 class Example extends Component {
   getData () {

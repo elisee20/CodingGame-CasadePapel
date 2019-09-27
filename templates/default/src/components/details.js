@@ -1,5 +1,6 @@
 import { Component, h } from 'splay'
 import Player from './player'
+import InfosMedia from '@components/InfosMedia/InfosMedia'
 import '@css/components/details.less'
 
 class Details extends Component {
@@ -7,6 +8,7 @@ class Details extends Component {
     return (
       <div className="details">
         <Player parent={this} />
+        <InfosMedia parent={this} />
       </div>
     )
   }
