@@ -5,7 +5,7 @@ const webpack = require('webpack')
 const builder = require('./build')
 
 // CONF
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8081
 const USE_HTTPS = process.env.HTTPS || false
 
 function createServer (opts = {}) {

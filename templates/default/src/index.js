@@ -6,16 +6,14 @@ import Connector from '@connector'
 import '@css/style.less'
 
 // import components asynchronously
-const Example = () => import(/* webpackChunkName: "example" */'./components/example')
-const Detail = () => import(/* webpackChunkName: "detail" */'./components/detail')
+const Details = () => import(/* webpackChunkName: "details" */'./components/details')
 
 logger.mode = DEBUG
 
 function launch () {
   // init Router
   Router.init('app', [
-    { re: /^detail/, Component: Detail },
-    { re: /^(.*)$/, Component: Example } // fallback url
+    { re: /^(.*)$/, Component: Details }
   ], () => globals.isBox && Connector.ready(() => Connector.registerKeys()))
 }
 

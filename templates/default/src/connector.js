@@ -161,6 +161,18 @@ export default class Connector {
     Connector.rpc('ready', callback)
   }
 
+  static play (params) {
+    Connector.rpc('play', params)
+  }
+
+  static pause () {
+    Connector.rpc('pause')
+  }
+
+  static resume () {
+    Connector.rpc('resume')
+  }
+
   /**
    * Register keys
    */
