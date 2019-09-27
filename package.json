@@ -1,0 +1,21 @@
+{
+  "name": "splay-generator",
+  "version": "1.0.1",
+  "description": "Generate a project running with Splay",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://gaas.canal-plus.com/projects/FTV/repos/splay-generator/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./index.js",
+  "preferGlobal": true,
+  "author": "Julien Dupont",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.0.0",
+    "recursive-copy": "^2.0.10"
+  }
+}
